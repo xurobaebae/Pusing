@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Damage Calculator</title>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Damage Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+
+<body>
+    <h1>Genshin Impact Damage Calculator</h1>
+    <form action="/" method="post">
+        <label for="attack">Attack:</label><br>
+        <input type="number" id="attack" name="attack" required><br><br>
+
+        <label for="defense">Defense:</label><br>
+        <input type="number" id="defense" name="defense" required><br><br>
+
+        <label for="hp">HP:</label><br>
+        <input type="number" id="hp" name="hp" required><br><br>
+
+        <label for="elementalMastery">Elemental Mastery:</label><br>
+        <input type="number" id="elementalMastery" name="elementalMastery" required><br><br>
+
+        <label for="talentPercentage">Talent Percentage:</label><br>
+        <input type="number" id="talentPercentage" name="talentPercentage" required><br><br>
+
+        <label for="critRate">Critical Rate (%):</label><br>
+        <input type="number" id="critRate" name="critRate" min="0" max="100" required><br><br>
+
+        <label for="critDamage">Critical Damage (%):</label><br>
+        <input type="number" id="critDamage" name="critDamage" min="0" max="100" required><br><br>
+
+        <label for="level">Character Level:</label><br>
+        <input type="number" id="level" name="level" min="1" max="90" required><br><br>
+
+        <label for="scalingType">Scaling Type (ATK/DEF/HP/EM):</label><br>
+        <input type="text" id="scalingType" name="scalingType" required><br><br>
+
+        <label for="reactionChoice">Select Reaction:</label><br>
+        <select id="reactionChoice" name="reactionChoice">
+            <option value="1">Vaporize (Pyro)</option>
+            <option value="2">Vaporize (Hydro)</option>
+            <option value="3">Melt (Cryo)</option>
+            <option value="4">Melt (Pyro)</option>
+            <option value="5">Bloom</option>
+            <option value="6">Burgeon</option>
+            <option value="7">Hyperbloom</option>
+            <option value="8">Aggravate</option>
+            <option value="9">Spread</option>
+        </select><br><br>
+
+        <label for="viridescent">Viridescent (true/false):</label>
+        <input type="text" id="viridescent" name="viridescent" required><br><br>
+
+        <label for="deepwood">Deepwood (true/false):</label>
+        <input type="text" id="deepwood" name="deepwood" required><br><br>
+
+        <label for="zhongli">Zhongli Shield (true/false):</label>
+        <input type="text" id="zhongli" name="zhongli" required><br><br>
+
+        <input type="submit" value="Calculate Damage">
+    </form>
+</body>
+</html>
